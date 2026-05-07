@@ -330,12 +330,21 @@
             border-color: rgba(212,163,115,0.35);
         }
         .product-img {
-            height: 130px;
-            background: linear-gradient(135deg, #f9f4e8, #f0e8d6);
-            display: flex; align-items: center; justify-content: center;
-            font-size: 3.5rem;
-            position: relative;
-        }
+    height: 180px; /* Aumentei um pouco para garrafas mais altas */
+    background: linear-gradient(135deg, #f9f4e8, #f0e8d6);
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+    padding: 15px; /* Cria um respiro para a imagem não encostar na borda */
+}
+
+/* Adicione esta regra logo abaixo para controlar a imagem dentro da div */
+.product-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Isso faz a imagem aparecer inteira sem cortar */
+}
         .product-info { padding: 14px; }
         .product-name {
             font-weight: 700;
